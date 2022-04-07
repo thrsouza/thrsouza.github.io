@@ -1,31 +1,41 @@
 main > header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 16px 24px;
   background-color: var(--color-background-default);
   border-bottom: 1px solid var(--color-border-muted);
+  padding: 0 24px;
   position: fixed;
   width: 100%;
   z-index: 9999;
 }
-main > header > nav > ul {
+main > header > div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  max-width: 1200px;
+  width: 100%;
+}
+main > header > div.container > nav > ul {
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-main > header > nav > ul > li {
-  margin: 0 8px;
+main > header > div.container > nav > ul > li {
+  margin: 0 16px;
 }
-main > header > nav > ul > li > a {
+main > header > div.container > nav > ul > li > a {
   display: inline-block;
   color: var(--color-text-default);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
+  text-transform: uppercase;
   transition: color ease 300ms;
 }
-main > header > nav > ul > li > a:hover {
+main > header > div.container > nav > ul > li > a:hover {
   color: var(--color-primary);
 }
 
@@ -250,6 +260,7 @@ main > section#projects > div.container > div.content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   align-items: flex-start;
   margin: 64px 0;
@@ -262,6 +273,7 @@ main > section#projects > div.container > div.content > article {
   display: inline-block;
 
   width: calc(33% - 2px);
+  margin-bottom: 8px;
   aspect-ratio: 1;
 
   /* transition: background-color ease 700ms; */
@@ -399,11 +411,8 @@ main
 }
 
 @media (max-width: 800px) {
-  main > header > nav > ul > li {
-    margin: 0 6px;
-  }
-  main > header > nav > ul > li > a {
-    font-size: 14px;
+  main > header > div.container > nav {
+    display: none;
   }
 
   main > section#about-me > div.container > div.content {
