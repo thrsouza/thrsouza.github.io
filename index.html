@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/logo.svg" type="image/x-icon" />
+    <title>Thiago Souza | Full Stack Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-primary: #f0db4fff;
+        --color-background-default: #0d1117ff;
+        --color-background-muted: #161b22ff;
+        --color-border-default: #30363dff;
+        --color-border-muted: #ffffff09;
+
+        --color-text-darkest: #161b22ff;
+        --color-text-default: #f0f6fcff;
+        --color-text-muted: #484f58ff;
+      }
+
+      * {
+        box-sizing: border-box;
+        border: none;
+        padding: 0;
+        margin: 0;
+        user-select: none;
+      }
+
+      body {
+        background-color: var(--color-background-default);
+        font-family: "Rubik", sans-serif;
+        color: var(--color-text-default);
+      }
+
+      /*-------------------------------------------------------------*/
+
+      body,
+      main {
+        height: 100vh;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+      }
+      h1 > span {
+        font-size: 36px;
+        color: var(--color-primary);
+      }
+
+      h2 {
+        font-size: 36px;
+        font-weight: 700;
+      }
+      h2::before {
+        content: "";
+        background-color: var(--color-primary);
+        border-radius: 8px;
+        margin-top: -16px;
+        position: absolute;
+        width: 86px;
+        height: 8px;
+      }
+
+      a.btn,
+      button.btn {
+        background-color: var(--color-primary);
+        color: var(--color-text-darkest);
+        text-decoration: none;
+        /* text-transform: uppercase; */
+      }
+      a.btn.btn-sm,
+      button.btn.btn-sm {
+        border-radius: 36px;
+        padding: 12px 24px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      a.btn.btn-lg,
+      button.btn.btn-lg {
+        border-radius: 36px;
+        padding: 20px 44px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 16px;
+        margin: 12px 0;
+        border-radius: 4px;
+        font-size: 16px;
+        font-family: "Rubik", sans-serif;
+        resize: none;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>TS<span>.</span></h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="home">
+        <img src="assets/images/logo.svg" alt="Thiago Souza" class="logo" />
+        <h1>Thiago Souza<span>.</span></h1>
+        <img
+          src="assets/images/subtitle.svg"
+          alt="Full Stack Developer"
+          class="subtitle"
+        />
+        <ul>
+          <li>
+            <a href="https://github.com/thrsouza" target="_blank"
+              ><img src="/assets/icons/github.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/thrsouza" target="_blank"
+              ><img src="/assets/icons/linkedin.svg"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://play.google.com/store/apps/dev?id=8865737054333441628"
+              target="_blank"
+              ><img src="/assets/icons/playstore.svg"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCObFBuhVmi48ZHS07Li5h5A"
+              target="_blank"
+              ><img src="/assets/icons/youtube.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/thrsouza.sh" target="_blank"
+              ><img src="/assets/icons/instagram.svg"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <section id="about-me">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="content">
+            <img
+              src="https://avatars.githubusercontent.com/u/6491925?v=4"
+              alt="Thiago Souza"
+              class="avatar"
+            />
+            <div class="description">
+              <h1>Hello, I'm Thiago Souza!</h1>
+              <p>
+                Working in the development area, always seeking to achieve the
+                goals proposed by the company and, in parallel, I seek to
+                improve myself and achieve professional growth, continuously
+                maintaining commitment, agility and responsibility<span>.</span>
+              </p>
+              <p>
+                In addition to coding, I enjoy listening to great music,
+                watching movies / series and exploring new technologies<span
+                  >.</span
+                >
+              </p>
+              <!-- <div class="github-info">
+                <img
+                  alt="Thiago's Github Stats"
+                  src="https://github-readme-stats.vercel.app/api?username=thrsouza&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=0000&title_color=F0DB4F&icon_color=F0DB4F"
+                  height="200"
+                  style="max-width: 100%"
+                />
+              </div> -->
+            </div>
+          </div>
+          <ul class="footer">
+            <li>
+              <img src="assets/icons/flutter.svg" alt="" /><span>Flutter</span>
+            </li>
+            <li>
+              <img src="assets/icons/react.svg" alt="" /><span>React</span>
+            </li>
+            <li>
+              <img src="assets/icons/nodejs.svg" alt="" /><span>Node</span>
+            </li>
+            <li>
+              <img src="assets/icons/csharp.svg" alt="" /><span>.NET C#</span>
+            </li>
+            <li><img src="assets/icons/aws.svg" alt="" /><span>AWS</span></li>
+            <li>
+              <img src="assets/icons/firebase.svg" alt="" /><span
+                >Firebase</span
+              >
+            </li>
+            <li>
+              <img src="assets/icons/mongodb.svg" alt="" /><span>Mongo</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="experience">
+        <div class="container">
+          <h2>Experience</h2>
+          <div class="content">
+            <ul class="left">
+              <li>
+                <small>Jan 2020 - Present</small>
+                <strong>Golfleet Tecnologia</strong>
+                <span>Full Stack Technical Leader</span>
+              </li>
+              <li>
+                <small>Dec 2019 - Jan 2020</small>
+                <strong>Neon Tecnologia</strong>
+                <span>Back-End Developer</span>
+              </li>
+              <li>
+                <small>Sep 2018 - Nov 2019</small>
+                <strong>Golfleet Tecnologia</strong>
+                <span>Full Stack Developer</span>
+              </li>
+              <li>
+                <small>Jan 2015 - Sep 2018</small>
+                <strong>ATOS Brasil</strong>
+                <span>Systems Analyst Developer</span>
+              </li>
+            </ul>
+            <ul class="right">
+              <li>
+                <small>Nov 2014 - Jan 2015</small>
+                <strong>Revisoes Cantoni</strong>
+                <span>Senior Software Developer</span>
+              </li>
+              <li>
+                <small>Aug 2014 - Nov 2014</small>
+                <strong>BSI Tecnologia</strong>
+                <span>Systems Analyst Developer</span>
+              </li>
+              <li>
+                <small>May 2012 - Jul 2014</small>
+                <strong>Gelt Tecnologia e Sistemas</strong>
+                <span>Software Developer</span>
+              </li>
+              <li>
+                <small>Dec 2011 - Apr 2012</small>
+                <strong>FTI Tecnologia da Informação</strong>
+                <span>Microsoft .NET Developer</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="content">
+            <article>
+              <img
+                src="/assets/images/portfolio/mooca-app_800x800.png"
+                alt="Mooca"
+              />
+              <div class="hover-content">
+                <img
+                  src="https://play-lh.googleusercontent.com/hALueuR8VtJS9NgbtZ5CEbDuT_VJIZ9kq-7OxAszjQLmVyFYhzH4Np0AeoWqH0bC9g=s180-rw"
+                  alt=""
+                />
+                <strong>Mooca</strong>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.thiagosouza.mooca"
+                  target="_blank"
+                  class="btn btn-sm"
+                >
+                  Access Page
+                </a>
+              </div>
+            </article>
+            <article>
+              <img
+                src="/assets/images/portfolio/can-i-deploy-today_800x800.png"
+                alt="Can I Deploy Today?"
+              />
+              <div class="hover-content">
+                <img
+                  src="https://play-lh.googleusercontent.com/r7CqLcFIRI33LyIiaRlsIh-LbrSaNuYE66GLMRpVodE6_V4XTQVCl2F1dVrdd2deuQ=s180-rw"
+                  alt=""
+                />
+                <strong>Can I Deploy Today?</strong>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.thiagosouza.canideploy"
+                  target="_blank"
+                  class="btn btn-sm"
+                >
+                  Access Page
+                </a>
+              </div>
+            </article>
+            <article>
+              <img
+                src="/assets/images/portfolio/royal-house-club_800x800.png"
+                alt="Royal House Club"
+              />
+              <div class="hover-content">
+                <img
+                  src="https://royal-house-club-app.vercel.app/assets/icons/icon-256x256.png"
+                  alt=""
+                />
+                <strong>Royal House Club</strong>
+                <a
+                  href="https://royal-house-club-app.vercel.app/"
+                  target="_blank"
+                  class="btn btn-sm"
+                >
+                  Access Page
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xwkyngnz"
+            accept-charset="utf-8"
+            method="post"
+          >
+            <fieldset class="content">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Your name..."
+                  name="name"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email-address">Email Address</label>
+                <input
+                  type="text"
+                  placeholder="your@email.com"
+                  name="email"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  placeholder="Feel free..."
+                  autocomplete="off"
+                  required
+                  rows="10"
+                ></textarea>
+              </div>
+              <button class="btn btn-lg">Send Message</button>
+              <p id="contact-form-status"></p>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <span>Copyright © 2022 Thiago Souza</span>
+      </footer>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
