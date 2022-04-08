@@ -18,6 +18,7 @@
         --color-primary: #f0db4fff;
         --color-background-default: #0d1117ff;
         --color-background-muted: #161b22ff;
+        --color-background-disabled: #484f58ff;
         --color-border-default: #30363dff;
         --color-border-muted: #ffffff09;
 
@@ -39,9 +40,22 @@
         font-family: "Rubik", sans-serif;
         color: var(--color-text-default);
       }
+
+      body::-webkit-scrollbar {
+        width: 12px;
+      }
+      body::-webkit-scrollbar-track {
+        background: var(--color-background-default);
+      }
+      body::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        border: 4px solid var(--color-background-default);
+        background-color: var(--color-background-muted);
+      }
     </style>
-    <link rel="stylesheet" href="css/style.css?v=1.0.0" />
+    <link rel="stylesheet" href="css/style.css?v=1.1.1" />
   </head>
+
   <body>
     <main>
       <header>
@@ -72,33 +86,35 @@
         />
         <ul>
           <li>
-            <a href="https://github.com/thrsouza" target="_blank"
-              ><img src="/assets/icons/github.svg"
-            /></a>
+            <a href="https://github.com/thrsouza" target="_blank">
+              <img src="/assets/icons/github.svg" />
+            </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/thrsouza" target="_blank"
-              ><img src="/assets/icons/linkedin.svg"
-            /></a>
+            <a href="https://www.linkedin.com/in/thrsouza" target="_blank">
+              <img src="/assets/icons/linkedin.svg" />
+            </a>
           </li>
           <li>
             <a
               href="https://play.google.com/store/apps/dev?id=8865737054333441628"
               target="_blank"
-              ><img src="/assets/icons/playstore.svg"
-            /></a>
+            >
+              <img src="/assets/icons/playstore.svg" />
+            </a>
           </li>
           <li>
             <a
               href="https://www.youtube.com/channel/UCObFBuhVmi48ZHS07Li5h5A"
               target="_blank"
-              ><img src="/assets/icons/youtube.svg"
-            /></a>
+            >
+              <img src="/assets/icons/youtube.svg" />
+            </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/thrsouza.sh" target="_blank"
-              ><img src="/assets/icons/instagram.svg"
-            /></a>
+            <a href="https://www.instagram.com/thrsouza.sh" target="_blank">
+              <img src="/assets/icons/instagram.svg" />
+            </a>
           </li>
         </ul>
       </section>
@@ -107,7 +123,7 @@
           <h2>About Me</h2>
           <div class="content">
             <img
-              src="https://avatars.githubusercontent.com/u/6491925?v=4"
+              src="/assets/images/profile.png"
               alt="Thiago Souza"
               class="avatar"
             />
@@ -117,37 +133,44 @@
                 Working in the development area, always seeking to achieve the
                 goals proposed by the company and, in parallel, I seek to
                 improve myself and achieve professional growth, continuously
-                maintaining commitment, agility and responsibility<span>.</span>
+                maintaining commitment, agility and responsibility
+                <span>.</span>
               </p>
               <p>
                 In addition to coding, I enjoy listening to great music,
-                watching movies / series and exploring new technologies<span
-                  >.</span
-                >
+                watching movies / series and exploring new technologies
+                <span>.</span>
               </p>
             </div>
           </div>
           <ul class="footer">
             <li>
-              <img src="assets/icons/flutter.svg" alt="" /><span>Flutter</span>
+              <img src="assets/icons/flutter.svg" alt="Flutter" />
+              <span>Flutter</span>
             </li>
             <li>
-              <img src="assets/icons/react.svg" alt="" /><span>React</span>
+              <img src="assets/icons/react.svg" alt="React" />
+              <span>React</span>
             </li>
             <li>
-              <img src="assets/icons/nodejs.svg" alt="" /><span>Node</span>
+              <img src="assets/icons/nodejs.svg" alt="Node" />
+              <span>Node</span>
             </li>
             <li>
-              <img src="assets/icons/csharp.svg" alt="" /><span>.NET C#</span>
-            </li>
-            <li><img src="assets/icons/aws.svg" alt="" /><span>AWS</span></li>
-            <li>
-              <img src="assets/icons/firebase.svg" alt="" /><span
-                >Firebase</span
-              >
+              <img src="assets/icons/csharp.svg" alt=".NET C#" />
+              <span>.NET C#</span>
             </li>
             <li>
-              <img src="assets/icons/mongodb.svg" alt="" /><span>Mongo</span>
+              <img src="assets/icons/aws.svg" alt="AWS" />
+              <span>AWS</span>
+            </li>
+            <li>
+              <img src="assets/icons/firebase.svg" alt="Firebase" />
+              <span>Firebase</span>
+            </li>
+            <li>
+              <img src="assets/icons/mongodb.svg" alt="Mongo" />
+              <span>Mongo</span>
             </li>
           </ul>
         </div>
@@ -214,14 +237,14 @@
               />
               <div class="hover-content">
                 <img
-                  src="https://play-lh.googleusercontent.com/hALueuR8VtJS9NgbtZ5CEbDuT_VJIZ9kq-7OxAszjQLmVyFYhzH4Np0AeoWqH0bC9g=s180-rw"
-                  alt=""
+                  src="/assets/images/portfolio/mooca-app-logo.webp"
+                  alt="Mooca"
                 />
                 <strong>Mooca</strong>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.thiagosouza.mooca"
-                  target="_blank"
                   class="btn btn-sm"
+                  target="_blank"
                 >
                   Access Page
                 </a>
@@ -234,14 +257,14 @@
               />
               <div class="hover-content">
                 <img
-                  src="https://play-lh.googleusercontent.com/r7CqLcFIRI33LyIiaRlsIh-LbrSaNuYE66GLMRpVodE6_V4XTQVCl2F1dVrdd2deuQ=s180-rw"
-                  alt=""
+                  src="/assets/images/portfolio/can-i-deploy-today-logo.webp"
+                  alt="Can I Deploy Today?"
                 />
                 <strong>Can I Deploy Today?</strong>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.thiagosouza.canideploy"
-                  target="_blank"
                   class="btn btn-sm"
+                  target="_blank"
                 >
                   Access Page
                 </a>
@@ -254,8 +277,8 @@
               />
               <div class="hover-content">
                 <img
-                  src="https://royal-house-club-app.vercel.app/assets/icons/icon-256x256.png"
-                  alt=""
+                  src="/assets/images/portfolio/royal-house-club-logo.svg"
+                  alt="Royal House Club"
                 />
                 <strong>Royal House Club</strong>
                 <a
@@ -263,7 +286,7 @@
                   target="_blank"
                   class="btn btn-sm"
                 >
-                  Access Page
+                  Access Demo
                 </a>
               </div>
             </article>
@@ -274,8 +297,8 @@
               />
               <div class="hover-content">
                 <img
-                  src="https://www.neutronjs.com/img/logo-white.svg"
-                  alt=""
+                  src="/assets/images/portfolio/neutron-website-logo.svg"
+                  alt="Neutron JS"
                 />
                 <strong>Neutron JS</strong>
                 <a
@@ -295,7 +318,7 @@
           <h2>Contact Me</h2>
           <form
             id="contact-form"
-            action="https://formspree.io/f/xwkyngnz"
+            action="https://thrsouza-api.herokuapp.com/api/message"
             accept-charset="utf-8"
             method="post"
           >
@@ -330,7 +353,7 @@
                   rows="10"
                 ></textarea>
               </div>
-              <button class="btn btn-lg">Send Message</button>
+              <button type="submit" class="btn btn-lg">Send Message</button>
               <p id="contact-form-status"></p>
             </fieldset>
           </form>
@@ -340,6 +363,6 @@
         <span>Copyright © 2022 Thiago Souza</span>
       </footer>
     </main>
-    <script src="js/app.js?v=1.0.0"></script>
+    <script src="js/app.js?v=1.1.1"></script>
   </body>
 </html>

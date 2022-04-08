@@ -15,52 +15,68 @@
   });
 })();
 
-// Form - formspree - https://formspree.io/
+// Form - thiagosouza.com
 (() => {
-  const formElement = document.querySelector("#contact-form");
+  class MessageStatusController {
+    constructor() {
+      this.element = document.querySelector("#contact-form-status");
+      this.element.removeAttribute("success");
+      this.element.removeAttribute("error");
+      this.element.innerHTML = "";
+    }
+
+    showSuccessMsg() {
+      this.element.setAttribute("success", "");
+      this.element.innerHTML = "Thanks for your submission!";
+    }
+
+    showErrorMsg() {
+      this.element.setAttribute("error", "");
+      this.element.innerHTML = "Thanks for your submission!";
+    }
+
+    showLoadingMsg() {
+      this.element.innerHTML = "Sending message...";
+    }
+  }
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const msgStatusController = new MessageStatusController();
 
-    const statusElement = document.querySelector("#contact-form-status");
+    const data = {};
+    const formData = new FormData(event.target);
 
-    const data = new FormData(event.target);
-    fetch(event.target.action, {
-      method: formElement.method,
-      body: data,
-      headers: {
-        Accept: "application/json",
-      },
-    })
-      .then((response) => {
-        statusElement.removeAttribute("error");
-        statusElement.removeAttribute("success");
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
 
-        if (response.ok) {
-          statusElement.setAttribute("success", "");
+    event.target.setAttribute("loading", "");
+    msgStatusController.showLoadingMsg();
 
-          statusElement.innerHTML = "Thanks for your submission!";
-          formElement.reset();
-        } else {
-          statusElement.setAttribute("error", "");
-          response.json().then((data) => {
-            if (Object.hasOwn(data, "errors")) {
-              statusElement.innerHTML = data["errors"]
-                .map((error) => error["message"])
-                .join(", ");
-            } else {
-              statusElement.innerHTML =
-                "Oops! There was a problem submitting your form";
-            }
-          });
-        }
-      })
-      .catch((error) => {
-        statusElement.setAttribute("error", "");
-        statusElement.innerHTML =
-          "Oops! There was a problem submitting your form";
+    try {
+      const response = await fetch(event.target.action, {
+        headers: { "Content-Type": "application/json" },
+        method: event.target.method,
+        body: JSON.stringify(data),
       });
+
+      const reponseJson = await response.json();
+
+      if (reponseJson.ok) {
+        msgStatusController.showSuccessMsg();
+        formElement.reset();
+      } else {
+        msgStatusController.showErrorMsg();
+      }
+    } catch (error) {
+      console.log(error);
+      msgStatusController.showErrorMsg();
+    }
+
+    event.target.removeAttribute("loading");
   };
 
+  const formElement = document.querySelector("#contact-form");
   formElement.addEventListener("submit", handleSubmit);
 })();
