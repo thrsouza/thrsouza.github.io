@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--color-background-primary);
-  border-bottom: 1px solid var(--color-border-secundary);
+  border-bottom: 1px solid var(--color-background-secundary);
   padding: 0 24px;
   position: fixed;
   width: 100%;

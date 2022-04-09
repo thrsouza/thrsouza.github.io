@@ -120,5 +120,21 @@
   <body>
     <main id="app"></main>
     <script type="module" src="/src/app.tsx"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G6YGMPVCJ1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+      gtag("config", "G-G6YGMPVCJ1");
+    </script>
   </body>
 </html>
