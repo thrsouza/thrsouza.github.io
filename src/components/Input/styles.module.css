@@ -1,0 +1,15 @@
+.input,
+.textArea {
+  width: 100%;
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  resize: none;
+}
+
+.input,
+.textArea {
+  outline: none;
+}

@@ -1,0 +1,25 @@
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-text-darkest);
+  text-decoration: none;
+}
+
+.button.small {
+  border-radius: 36px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.button.large {
+  border-radius: 36px;
+  padding: 20px 44px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button.disabled {
+  background-color: var(--color-background-disabled);
+  pointer-events: none;
+}

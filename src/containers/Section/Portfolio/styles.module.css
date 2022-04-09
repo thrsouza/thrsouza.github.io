@@ -1,0 +1,73 @@
+.portfolioSection {
+  background-color: var(--color-background-muted);
+}
+
+.portfolioSection > div > div {
+  display: grid;
+  column-gap: 8px;
+  row-gap: 8px;
+  grid-template-columns: repeat(2, 1fr);
+
+  margin: 64px 0;
+  width: 100%;
+}
+
+.portfolioSection > div > div > article {
+  background-color: var(--color-background-default);
+  background-position: center;
+  background-size: 100%;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+
+  overflow: hidden;
+  aspect-ratio: 1 / 0.64;
+
+  transition: background-size ease 700ms;
+}
+
+.portfolioSection > div > div > article:hover {
+  background-size: 116%;
+}
+
+.portfolioSection > div > div > article > div.hoverContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-background-default);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+
+  transition: opacity ease 500ms;
+  pointer-events: none;
+}
+
+.portfolioSection > div > div > article:hover > div.hoverContent {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.portfolioSection > div > div > article > div.hoverContent > strong {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 16px 0;
+}
+
+.portfolioSection > div > div > article > div.hoverContent > a > img {
+  width: 142px;
+}
+
+@media (max-width: 800px) {
+  .portfolioSection > div > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .portfolioSection > div > div > article {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
