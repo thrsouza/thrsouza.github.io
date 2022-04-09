@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
 
-  background-color: var(--color-background-muted);
-  color: var(--color-text-muted);
+  background-color: var(--color-background-secundary);
+  color: var(--color-secundary);
   padding: 96px 24px;
   font-weight: 300;
 }

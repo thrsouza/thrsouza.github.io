@@ -1,5 +1,5 @@
 .portfolioSection {
-  background-color: var(--color-background-muted);
+  background-color: var(--color-background-secundary);
 }
 
 .portfolioSection > div > div {
@@ -13,7 +13,7 @@
 }
 
 .portfolioSection > div > div > article {
-  background-color: var(--color-background-default);
+  background-color: var(--color-background-primary);
   background-position: center;
   background-size: 100%;
   border-radius: 4px;
@@ -36,7 +36,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: var(--color-background-default);
+  background-color: var(--color-background-primary);
   position: absolute;
   height: 100%;
   width: 100%;

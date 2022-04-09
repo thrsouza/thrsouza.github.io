@@ -1,5 +1,5 @@
 .aboutSection {
-  background-color: var(--color-background-muted);
+  background-color: var(--color-background-secundary);
 }
 
 .aboutSection > div > div.content {
@@ -11,14 +11,14 @@
 }
 
 .aboutSection > div > div.content > img.avatar {
-  box-shadow: inset 0px 0px 0px 8px #fff;
+  box-shadow: inset 0px 0px 0px 8px var(--color-secundary);
   border-radius: 50%;
-  border: 8px solid #fff;
+  border: 8px solid var(--color-secundary);
   width: 148px;
 }
 
 .aboutSection > div > div.content > div.description {
-  background-color: var(--color-background-default);
+  background-color: var(--color-background-primary);
   border-radius: 8px;
   width: calc(100% - 148px - 64px);
   padding: 36px;
@@ -29,7 +29,7 @@
   position: absolute;
   border-style: solid;
   border-width: 16px 16px 16px 0;
-  border-color: transparent var(--color-background-default);
+  border-color: transparent var(--color-background-primary);
   margin-top: 24px;
   margin-left: -52px;
 }
@@ -68,18 +68,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.64;
 }
 
 .aboutSection > div > ul.footer > li > img {
-  filter: invert();
   width: 64px;
 }
 
 .aboutSection > div > ul.footer > li > span {
   text-transform: uppercase;
   margin-top: 12px;
-  color: black;
+  color: var(--color-secundary);
 }
 
 @media (max-width: 800px) {

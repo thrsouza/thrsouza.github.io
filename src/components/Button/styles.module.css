@@ -1,6 +1,6 @@
 .button {
-  background-color: var(--color-primary);
-  color: var(--color-text-darkest);
+  background-color: var(--color-button-background-primary);
+  color: var(--color-button-foreground);
   text-decoration: none;
 }
 
@@ -20,6 +20,6 @@
 }
 
 .button.disabled {
-  background-color: var(--color-background-disabled);
+  background-color: var(--color-button-background-secundary);
   pointer-events: none;
 }
