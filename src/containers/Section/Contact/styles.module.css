@@ -1,3 +1,7 @@
+.contactSection {
+  padding: 96px 24px 48px !important;
+}
+
 .contactSection > div > form > fieldset {
   display: flex;
   flex-direction: column;

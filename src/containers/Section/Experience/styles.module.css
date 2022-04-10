@@ -31,7 +31,7 @@
 
 .experienceSection > div > div > ul > li::before {
   content: "";
-  background: url(/assets/icons/suitcase.svg);
+  background: url(/assets/images/icons/suitcase.svg);
   position: absolute;
 
   background-color: var(--color-background-secundary);

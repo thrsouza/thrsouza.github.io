@@ -78,7 +78,12 @@ export function Header({ navigation }: HeaderType) {
             setShowMenu(!showMenu);
           }}
         >
-          <img src="/assets/icons/menu.svg" height={28} width={28} alt="Menu" />
+          <img
+            src="/assets/images/icons/menu.svg"
+            height={28}
+            width={28}
+            alt="Menu"
+          />
         </button>
       </div>
     </header>
