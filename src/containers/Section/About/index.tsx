@@ -37,12 +37,7 @@ export function About({ id, title }: SectionType) {
         <ul className={styles.footer}>
           {technologiesData.map((item, index) => (
             <li key={index}>
-              <img
-                src={item.icon}
-                alt={item.name}
-                height="64"
-                width="64"
-              />
+              <img src={item.icon} alt={item.name} height="64" width="64" />
               <span>{item.name}</span>
             </li>
           ))}

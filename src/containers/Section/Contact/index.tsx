@@ -49,7 +49,7 @@ export function Contact({ id, title }: SectionType) {
         setMessage(reponseJson.message);
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
       setIsLoading(false);
       setSubmitStatus(SubmitStatus.error);
       setMessage("Oops! I'm surprised... Please try again later :/");

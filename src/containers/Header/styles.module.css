@@ -44,6 +44,10 @@
   color: var(--color-primary);
 }
 
+.header > div > nav > ul > li[active] > a {
+  color: var(--color-primary);
+}
+
 .header > div > button {
   display: none;
   background-color: transparent;
@@ -86,12 +90,21 @@
       var(--color-background-secundary),
       var(--color-background-primary)
     );
-    border-left: 4px solid var(--color-primary);
+    border-left: 4px solid var(--color-background-secundary);
     margin: 4px 0;
   }
+
+  .header > div > nav > ul > li[active] {
+    border-left: 4px solid var(--color-secundary);
+  }
+
   .header > div > nav > ul > li > a {
     display: block;
     padding: 24px 36px;
+  }
+
+  .header > div > nav > ul > li[active] > a {
+    color: var(--color-primary);
   }
 
   .header > div > button {
