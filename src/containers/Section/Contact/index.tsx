@@ -41,17 +41,19 @@ export function Contact({ id, title }: SectionType) {
       if (reponseJson.ok) {
         setIsLoading(false);
         setSubmitStatus(SubmitStatus.success);
-        setMessage("Thanks for your submission!");
+        setMessage(reponseJson.message);
         event.target.reset();
-        return;
+      } else {
+        setIsLoading(false);
+        setSubmitStatus(SubmitStatus.error);
+        setMessage(reponseJson.message);
       }
     } catch (error) {
-      console.log(error);
+      console.log(error)
+      setIsLoading(false);
+      setSubmitStatus(SubmitStatus.error);
+      setMessage("Oops! I'm surprised... Please try again later :/");
     }
-
-    setIsLoading(false);
-    setSubmitStatus(SubmitStatus.error);
-    setMessage("Oops! There was a problem submitting your form :/");
   };
 
   return (

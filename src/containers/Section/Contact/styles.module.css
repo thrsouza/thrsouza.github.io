@@ -16,6 +16,7 @@
 }
 
 .contactSection > div > form > fieldset > p {
+  text-align: center;
   font-size: 18px;
   margin-top: 8px;
 }

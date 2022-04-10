@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Heading1 } from "@/components/Heading";
 
 import { HeaderType } from "@/@types/containers/Header";
@@ -5,6 +6,8 @@ import { HeaderType } from "@/@types/containers/Header";
 import styles from "./styles.module.css";
 
 export function Header({ navigation }: HeaderType) {
+  const [showMenu, setShowMenu] = useState<boolean>(false)
+
   const optionHandleClick = (event: any) => {
     event.preventDefault();
     const [, sectionId] = event.target.href.split("#");
@@ -16,13 +19,17 @@ export function Header({ navigation }: HeaderType) {
       var topElement = sectionElement.offsetTop - headerElement.offsetHeight;
       window.scroll({ top: topElement, behavior: "smooth" });
     }
+
+    if (showMenu) {
+      setShowMenu(false)
+    }
   };
 
   return (
     <header className={styles.header}>
       <div>
         <Heading1 text="TS" />
-        <nav>
+        <nav className={showMenu ? styles.show : ''}>
           <ul>
             {navigation.map((option, index) => (
               <li key={index}>
@@ -33,6 +40,19 @@ export function Header({ navigation }: HeaderType) {
             ))}
           </ul>
         </nav>
+        <button
+          type='button'
+          onClick={() => {
+            setShowMenu(!showMenu)
+          }}
+        >
+          <img
+            src="/assets/icons/menu.svg"
+            height={28}
+            width={28}
+            alt="Menu"
+          />
+        </button>
       </div>
     </header>
   );

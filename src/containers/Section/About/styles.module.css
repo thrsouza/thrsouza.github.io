@@ -106,4 +106,13 @@
   .aboutSection > div > ul.footer > li:nth-child(-n + 4) {
     display: inherit;
   }
+
+  .aboutSection > div > ul.footer > li > img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .aboutSection > div > ul.footer > li > span {
+    font-size: 12px;
+  }
 }

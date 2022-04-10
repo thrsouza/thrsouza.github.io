@@ -69,6 +69,7 @@
       }
 
       * {
+        -webkit-tap-highlight-color: transparent;
         box-sizing: border-box;
         border: none;
         padding: 0;
@@ -107,13 +108,19 @@
         justify-content: center;
         align-items: center;
         border-bottom: 1px solid var(--color-border-secundary);
-        padding: 128px 24px 96px;
+        padding: 96px 24px;
         width: 100%;
       }
 
       main#app > section > div {
         max-width: 1200px;
         width: 100%;
+      }
+
+      @media (max-width: 800px) {
+        main#app > section {
+          padding: 64px 24px;
+        }
       }
     </style>
   </head>
