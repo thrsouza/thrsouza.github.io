@@ -27,7 +27,7 @@ export function Home({ id }: SectionType) {
         {socialData.map((item, index) => (
           <li key={index}>
             <a href={item.href} target="_blank">
-              <img src={item.icon} alt={item.name} height="28" width="28" />
+              <i className={item.icon} />
             </a>
           </li>
         ))}

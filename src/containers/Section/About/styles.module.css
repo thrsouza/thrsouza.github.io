@@ -70,8 +70,8 @@
   align-items: center;
 }
 
-.aboutSection > div > ul.footer > li > img {
-  width: 64px;
+.aboutSection > div > ul.footer > li > i {
+  font-size: 64px;
 }
 
 .aboutSection > div > ul.footer > li > span {
@@ -107,9 +107,8 @@
     display: inherit;
   }
 
-  .aboutSection > div > ul.footer > li > img {
-    width: 48px;
-    height: 48px;
+  .aboutSection > div > ul.footer > li > i {
+    font-size: 48px;
   }
 
   .aboutSection > div > ul.footer > li > span {

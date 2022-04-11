@@ -3,31 +3,31 @@ import { TechnologiesDataType } from "@/@types/data/technologies";
 const technologiesData = <TechnologiesDataType[]>[
   {
     name: "Flutter",
-    icon: "/assets/images/icons/flutter.svg",
+    icon: "icon-flutter",
   },
   {
     name: "React",
-    icon: "/assets/images/icons/react.svg",
+    icon: "icon-react",
   },
   {
     name: "Node",
-    icon: "/assets/images/icons/nodejs.svg",
+    icon: "icon-nodejs",
   },
   {
     name: ".NET C#",
-    icon: "/assets/images/icons/csharp.svg",
+    icon: "icon-csharp",
   },
   {
     name: "AWS",
-    icon: "/assets/images/icons/aws.svg",
+    icon: "icon-aws",
   },
   {
     name: "Firebase",
-    icon: "/assets/images/icons/firebase.svg",
+    icon: "icon-firebase",
   },
   {
     name: "Mongo",
-    icon: "/assets/images/icons/mongodb.svg",
+    icon: "icon-mongodb",
   },
 ];
 

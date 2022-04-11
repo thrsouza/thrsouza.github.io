@@ -33,6 +33,7 @@
   transform: scale(1.2);
 }
 
-.homeSection > ul > li > a > img {
-  width: 28px;
+.homeSection > ul > li > a > i {
+  font-size: 28px;
+  color: var(--color-secundary);
 }

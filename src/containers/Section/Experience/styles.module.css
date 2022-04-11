@@ -30,16 +30,17 @@
 }
 
 .experienceSection > div > div > ul > li::before {
-  content: "";
-  background: url(/assets/images/icons/suitcase.svg);
+  content: "\E80C";
+  font-family: "thrsouza-icons";
+
+  display: flex;
+  justify-content: center;
   position: absolute;
 
   background-color: var(--color-background-secundary);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 48%;
   border-radius: 50%;
 
+  align-items: center;
   margin-top: -14px;
   margin-left: -58px;
   height: 42px;
