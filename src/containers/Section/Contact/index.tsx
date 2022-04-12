@@ -5,7 +5,7 @@ import { Heading2 } from "@/components/Heading";
 import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 enum SubmitStatus {
   neutral,
@@ -101,14 +101,13 @@ export function Contact({ id, title }: SectionType) {
               disabled={isLoading}
             />
             <p
-              style={{
-                color:
-                  submitStatus === SubmitStatus.success
-                    ? "#22ff88"
-                    : submitStatus === SubmitStatus.error
-                    ? "#ff5566"
-                    : "",
-              }}
+              className={
+                submitStatus === SubmitStatus.success
+                  ? styles.success
+                  : submitStatus === SubmitStatus.error
+                  ? styles.error
+                  : ""
+              }
             >
               {message}
             </p>

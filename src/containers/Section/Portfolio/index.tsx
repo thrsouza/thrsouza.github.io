@@ -4,7 +4,7 @@ import { Link } from "@/components/Link";
 
 import portfolioData from "@/data/portfolio";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 export function Portfolio({ id, title }: SectionType) {
   return (

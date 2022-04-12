@@ -3,7 +3,7 @@ import { Heading1 } from "@/components/Heading";
 
 import { HeaderType } from "@/@types/containers/Header";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 export function Header({ navigation }: HeaderType) {
   const [showMenu, setShowMenu] = useState<boolean>(false);

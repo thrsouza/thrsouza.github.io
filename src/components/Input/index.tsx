@@ -1,6 +1,6 @@
 import { InputType } from "@/@types/components/Input";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 export function Input({ name, type, label, required, placeholder }: InputType) {
   if (type === "multiline") {

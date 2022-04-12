@@ -1,0 +1,25 @@
+.button {
+  background-color: var(--color-button-background-primary);
+  color: var(--color-button-foreground);
+  text-decoration: none;
+
+  &.small {
+    border-radius: 36px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &.large {
+    border-radius: 36px;
+    padding: 20px 44px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &.disabled {
+    background-color: var(--color-button-background-secundary);
+    pointer-events: none;
+  }
+}

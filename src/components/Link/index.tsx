@@ -1,6 +1,6 @@
 import { LinkType } from "@/@types/components/Link";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 export function Link({ text, href, size, disabled }: LinkType) {
   return (

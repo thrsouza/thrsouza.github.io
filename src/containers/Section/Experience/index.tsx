@@ -4,7 +4,7 @@ import { Heading2 } from "@/components/Heading";
 
 import experieceData from "@/data/experience";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 const leftList: ExpericenceDataType[] = [];
 const rightList: ExpericenceDataType[] = [];

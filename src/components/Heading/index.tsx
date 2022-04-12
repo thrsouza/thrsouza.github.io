@@ -1,6 +1,6 @@
 import { HeadingType } from "@/@types/components/Heading";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 export function Heading1({ text }: HeadingType) {
   return (
@@ -12,5 +12,5 @@ export function Heading1({ text }: HeadingType) {
 }
 
 export function Heading2({ text }: HeadingType) {
-  return <h2 className={styles.heading2}>{text}</h2>;
+  return <h2 className={styles.heading2}>{text}</h2>
 }

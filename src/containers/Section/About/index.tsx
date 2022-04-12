@@ -3,7 +3,7 @@ import { Heading2 } from "@/components/Heading";
 
 import technologiesData from "@/data/technologies";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 export function About({ id, title }: SectionType) {
   return (
@@ -19,7 +19,7 @@ export function About({ id, title }: SectionType) {
             width="148"
           />
           <div className={styles.description}>
-            <h1>Hello, I'm Thiago Souza!</h1>
+            <h1>Hello, I&apos;m Thiago Souza!</h1>
             <p>
               Working in the development area, always seeking to achieve the
               goals proposed by the company and, in parallel, I seek to improve

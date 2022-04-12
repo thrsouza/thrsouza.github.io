@@ -3,7 +3,7 @@ import { Heading1 } from "@/components/Heading";
 
 import socialData from "@/data/social";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 export function Home({ id }: SectionType) {
   return (
